@@ -19,7 +19,10 @@
     "test:e2e": "vitest run --config ./vitest.config.e2e.mts",
     "test:e2e:watch": "vitest --config ./vitest.config.e2e.mts",
     "test:cov": "vitest run --coverage",
-    "db:seed": "npx prisma db seed"
+    "db:seed": "pnpm dlx prisma db seed",
+    "db:generate": "pnpm dlx prisma generate",
+    "db:migrate": "pnpm dlx prisma migrate dev",
+    "db:deploy": "pnpm dlx prisma migrate deploy"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
