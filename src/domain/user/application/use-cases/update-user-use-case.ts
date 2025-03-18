@@ -55,8 +55,8 @@ export class UpdateUserUseCase {
       user.password = hashedPassword
     }
 
-    user.name = name
-    user.email = email
+    user.name = name ?? user.name
+    user.email = email ?? user.email
     user.updatedAt = new Date()
 
     await this.usersRepository.update(user)

@@ -22,8 +22,9 @@ const updateUserBodySchema = z.object({
   name: z
     .string()
     .min(3, { message: 'Name must have at least 3 characters' })
-    .max(255, { message: 'Name must have at most 255 characters' }),
-  email: z.string().email(),
+    .max(255, { message: 'Name must have at most 255 characters' })
+    .optional(),
+  email: z.string().email().optional(),
   password: z.string().optional(),
 })
 
